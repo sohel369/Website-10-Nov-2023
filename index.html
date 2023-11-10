@@ -13,10 +13,9 @@
         }
 
         body {
-
+            background: #031321;
             height: 100vh;
             width: 100%;
-            background: #031321;
         }
 
         nav {
@@ -45,6 +44,7 @@
             text-decoration: none;
             cursor: pointer;
             margin-right: 14px;
+            position: relative;
         }
 
         .btn1 {
@@ -55,6 +55,7 @@
             border: none;
             outline: none;
             margin: 10px;
+            position: relative;
         }
 
         .btn2 {
@@ -78,6 +79,7 @@
 
         .content p {
             color: white;
+            text-transform: capitalize;
         }
 
         .content h2 {
@@ -100,6 +102,74 @@
             color: #fff;
             border-radius: 4px;
             margin-top: 10px;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 6%;
+        }
+
+        .container2 .div1 {
+            background: white;
+            height: 210px;
+            width: 250px;
+            border-radius: 10px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .container2 .div1 img {
+            width: 80px;
+            margin-left: 90px;
+            cursor: pointer;
+        }
+
+        .container2 .div1 h1 {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 28px;
+            color: tomato;
+        }
+
+        .container2 .div1 p {
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: 1s;
+            bottom: -4px;
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+
+        .btn .btn1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgb(76, 76, 241);
+            height: 100%;
+            width: 100%;
+            transition: 0.2s;
+            transform: scale(0);
+            color: white;
+            border-radius: 4px;
+        }
+
+        .btn .btn1:hover::after {
+            transform: scale(1.5);
         }
 
         nav
@@ -129,6 +199,23 @@
             <h3>we know how large object will act. but thing on a small scall on a <br>small scall just do not act the
                 way</h3>
             <button type="button" class="join">Join us</button>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="div1">
+            <img src="./media/apple.png" alt="apple">
+            <h1>training course</h1>
+            <p>The gradual accumulations of <br>information about atomic and <br> small scall behavior</p>
+        </div>
+        <div class="div1">
+            <img src="./media/twitter.png" alt="twitter">
+            <h1>lifeline acces</h1>
+            <p>The gradual accumulations of <br>information about atomic and <br> small scall behavior</p>
+        </div>
+        <div class="div1">
+            <img src="./media/Whatsapp.jpg" alt="Whatsapp">
+            <h1>market analysis</h1>
+            <p>The gradual accumulations of <br>information about atomic and <br> small scall behavior</p>
         </div>
     </div>
 
